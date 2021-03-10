@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function CountTodos( { todos } ) {
     return (
         <div>
-            <span>{todos.length} items left.</span>            
+            <span style={{ fontWeight: 'bold' , color: 'gray'}}>{todos.length} items left.</span>
         </div>
     );
 }
@@ -72,7 +72,7 @@ function App() {
     
         <div className="app" style={{ paddingTop: "40px" }}>
             
-            <div className="container" class="bg-light" style={{ paddingTop: "40px", paddingBottom: "40px" }}>
+            <div className="container" class="bg-light" style={{ paddingTop: "40px", paddingBottom: "40px", height: "95%" , overflow: "scroll" }}>
                 
                 <div style={{ backgroundColor: "white", marginLeft: "5%", marginRight: "5%" } }>
                 
